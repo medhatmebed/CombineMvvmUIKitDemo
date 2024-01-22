@@ -13,7 +13,20 @@
 		8B2922242B5EBD4E00110FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2922222B5EBD4E00110FB6 /* Main.storyboard */; };
 		8B2922262B5EBD5000110FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2922252B5EBD5000110FB6 /* Assets.xcassets */; };
 		8B2922292B5EBD5000110FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B2922272B5EBD5000110FB6 /* LaunchScreen.storyboard */; };
+		8B2922312B5EC1A600110FB6 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2922302B5EC1A600110FB6 /* QuoteViewModel.swift */; };
+		8B2922332B5EC1DE00110FB6 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2922322B5EC1DE00110FB6 /* QuoteService.swift */; };
+		8B29223F2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29223E2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B2922402B5EC2E800110FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B2922112B5EBD4E00110FB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B2922182B5EBD4E00110FB6;
+			remoteInfo = CombineMvvmUIKitDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8B2922192B5EBD4E00110FB6 /* CombineMvvmUIKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineMvvmUIKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		8B2922252B5EBD5000110FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B2922282B5EBD5000110FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B29222A2B5EBD5000110FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2922302B5EC1A600110FB6 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		8B2922322B5EC1DE00110FB6 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		8B29223C2B5EC2E700110FB6 /* Combine_Mvvm_UIKitDemo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Combine_Mvvm_UIKitDemo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B29223E2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_Mvvm_UIKitDemo_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8B2922162B5EBD4E00110FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B2922392B5EC2E700110FB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8B29221B2B5EBD4E00110FB6 /* CombineMvvmUIKitDemo */,
+				8B29223D2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests */,
 				8B29221A2B5EBD4E00110FB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				8B2922192B5EBD4E00110FB6 /* CombineMvvmUIKitDemo.app */,
+				8B29223C2B5EC2E700110FB6 /* Combine_Mvvm_UIKitDemo_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +85,22 @@
 				8B29221C2B5EBD4E00110FB6 /* AppDelegate.swift */,
 				8B29221E2B5EBD4E00110FB6 /* SceneDelegate.swift */,
 				8B2922202B5EBD4E00110FB6 /* ViewController.swift */,
+				8B2922322B5EC1DE00110FB6 /* QuoteService.swift */,
+				8B2922302B5EC1A600110FB6 /* QuoteViewModel.swift */,
 				8B2922222B5EBD4E00110FB6 /* Main.storyboard */,
 				8B2922252B5EBD5000110FB6 /* Assets.xcassets */,
 				8B2922272B5EBD5000110FB6 /* LaunchScreen.storyboard */,
 				8B29222A2B5EBD5000110FB6 /* Info.plist */,
 			);
 			path = CombineMvvmUIKitDemo;
+			sourceTree = "<group>";
+		};
+		8B29223D2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B29223E2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests.swift */,
+			);
+			path = Combine_Mvvm_UIKitDemo_Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +123,24 @@
 			productReference = 8B2922192B5EBD4E00110FB6 /* CombineMvvmUIKitDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8B29223B2B5EC2E700110FB6 /* Combine_Mvvm_UIKitDemo_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2922422B5EC2E800110FB6 /* Build configuration list for PBXNativeTarget "Combine_Mvvm_UIKitDemo_Tests" */;
+			buildPhases = (
+				8B2922382B5EC2E700110FB6 /* Sources */,
+				8B2922392B5EC2E700110FB6 /* Frameworks */,
+				8B29223A2B5EC2E700110FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B2922412B5EC2E800110FB6 /* PBXTargetDependency */,
+			);
+			name = Combine_Mvvm_UIKitDemo_Tests;
+			productName = Combine_Mvvm_UIKitDemo_Tests;
+			productReference = 8B29223C2B5EC2E700110FB6 /* Combine_Mvvm_UIKitDemo_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +153,10 @@
 				TargetAttributes = {
 					8B2922182B5EBD4E00110FB6 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					8B29223B2B5EC2E700110FB6 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 8B2922182B5EBD4E00110FB6;
 					};
 				};
 			};
@@ -116,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				8B2922182B5EBD4E00110FB6 /* CombineMvvmUIKitDemo */,
+				8B29223B2B5EC2E700110FB6 /* Combine_Mvvm_UIKitDemo_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +190,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B29223A2B5EC2E700110FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +205,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2922212B5EBD4E00110FB6 /* ViewController.swift in Sources */,
+				8B2922312B5EC1A600110FB6 /* QuoteViewModel.swift in Sources */,
+				8B2922332B5EC1DE00110FB6 /* QuoteService.swift in Sources */,
 				8B29221D2B5EBD4E00110FB6 /* AppDelegate.swift in Sources */,
 				8B29221F2B5EBD4E00110FB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8B2922382B5EC2E700110FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B29223F2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B2922412B5EC2E800110FB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B2922182B5EBD4E00110FB6 /* CombineMvvmUIKitDemo */;
+			targetProxy = 8B2922402B5EC2E800110FB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8B2922222B5EBD4E00110FB6 /* Main.storyboard */ = {
@@ -341,6 +425,42 @@
 			};
 			name = Release;
 		};
+		8B2922432B5EC2E800110FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75W46TW7GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Medhat.Combine-Mvvm-UIKitDemo-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CombineMvvmUIKitDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CombineMvvmUIKitDemo";
+			};
+			name = Debug;
+		};
+		8B2922442B5EC2E800110FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75W46TW7GG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Medhat.Combine-Mvvm-UIKitDemo-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CombineMvvmUIKitDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CombineMvvmUIKitDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -358,6 +478,15 @@
 			buildConfigurations = (
 				8B29222E2B5EBD5000110FB6 /* Debug */,
 				8B29222F2B5EBD5000110FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B2922422B5EC2E800110FB6 /* Build configuration list for PBXNativeTarget "Combine_Mvvm_UIKitDemo_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B2922432B5EC2E800110FB6 /* Debug */,
+				8B2922442B5EC2E800110FB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
