@@ -13,7 +13,7 @@ protocol QuoteServiceType {
 }
 
 class QuoteService: QuoteServiceType {
-  
+  /// calling api using dataTaskPublisher 
   func getRandomQuote() -> AnyPublisher<Quote, Error> {
     let url = URL(string: "https://api.quotable.io/random")!
     return URLSession.shared.dataTaskPublisher(for: url)

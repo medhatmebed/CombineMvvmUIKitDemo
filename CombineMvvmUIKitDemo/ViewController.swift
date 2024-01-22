@@ -24,9 +24,10 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated)
+        /// here we send viewDidAppear to the viewmodel so that we can get initial quote text on the label
       input.send(.viewDidAppear)
     }
-    
+    /// here in the bind we receive the output from the viewmodel 
     private func bind() {
       let output = vm.transform(input: input.eraseToAnyPublisher())
       output
