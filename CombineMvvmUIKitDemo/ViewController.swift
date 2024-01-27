@@ -7,11 +7,12 @@
 
 import UIKit
 import Combine
-
+import SwiftUI
 
 class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var refreshButton: UIButton!
+    @IBOutlet weak var swiftUIButton: UIButton!
     
     private let vm = QuoteViewModel()
     private let input: PassthroughSubject<QuoteViewModel.Input, Never> = .init()
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
         /// here we send viewDidAppear to the viewmodel so that we can get initial quote text on the label
       input.send(.viewDidAppear)
     }
-    /// here in the bind we receive the output from the viewmodel 
+    /// here in the bind we receive the output from the viewmodel
     private func bind() {
       let output = vm.transform(input: input.eraseToAnyPublisher())
       output
@@ -47,6 +48,12 @@ class ViewController: UIViewController {
     
     @IBAction func refreshButtonPressed(_ sender: Any) {
         input.send(.refreshButtonDidTap)
+    }
+    @IBAction func swiftUIButtonPressed(_ sender: Any) {
+        // SwiftUIView Integration
+        let vc = UIHostingController(rootView: SwiftUIView())
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
 }
 

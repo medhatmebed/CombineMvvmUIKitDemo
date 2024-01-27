@@ -20,13 +20,13 @@
                                 <rect key="frame" x="24" y="326" width="345" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqF-eH-b1U">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwd-ut-Fgx">
-                                        <rect key="frame" x="0.0" y="150" width="345" height="50"/>
+                                        <rect key="frame" x="0.0" y="100" width="345" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="1ny-tB-JoO"/>
                                         </constraints>
@@ -34,6 +34,18 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Refresh"/>
                                         <connections>
                                             <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="udu-r6-o0n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jec-HU-6gz">
+                                        <rect key="frame" x="0.0" y="150" width="345" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JQk-xE-T2Q"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SwiftUI"/>
+                                        <connections>
+                                            <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ON0-cv-GsU"/>
+                                            <action selector="swiftUIButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GE7-i7-tMW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -54,6 +66,7 @@
                     <connections>
                         <outlet property="label" destination="wqF-eH-b1U" id="Eje-0o-dj0"/>
                         <outlet property="refreshButton" destination="cwd-ut-Fgx" id="cAU-1W-RXV"/>
+                        <outlet property="swiftUIButton" destination="Jec-HU-6gz" id="SGY-Sl-jdv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

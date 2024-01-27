@@ -16,6 +16,7 @@
 		8B2922312B5EC1A600110FB6 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2922302B5EC1A600110FB6 /* QuoteViewModel.swift */; };
 		8B2922332B5EC1DE00110FB6 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2922322B5EC1DE00110FB6 /* QuoteService.swift */; };
 		8B29223F2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29223E2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests.swift */; };
+		8B62940C2B64421C0033B266 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B62940B2B64421C0033B266 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		8B2922322B5EC1DE00110FB6 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
 		8B29223C2B5EC2E700110FB6 /* Combine_Mvvm_UIKitDemo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Combine_Mvvm_UIKitDemo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B29223E2B5EC2E800110FB6 /* Combine_Mvvm_UIKitDemo_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_Mvvm_UIKitDemo_Tests.swift; sourceTree = "<group>"; };
+		8B62940B2B64421C0033B266 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				8B29221C2B5EBD4E00110FB6 /* AppDelegate.swift */,
 				8B29221E2B5EBD4E00110FB6 /* SceneDelegate.swift */,
 				8B2922202B5EBD4E00110FB6 /* ViewController.swift */,
+				8B62940B2B64421C0033B266 /* SwiftUIView.swift */,
 				8B2922322B5EC1DE00110FB6 /* QuoteService.swift */,
 				8B2922302B5EC1A600110FB6 /* QuoteViewModel.swift */,
 				8B2922222B5EBD4E00110FB6 /* Main.storyboard */,
@@ -206,6 +209,7 @@
 			files = (
 				8B2922212B5EBD4E00110FB6 /* ViewController.swift in Sources */,
 				8B2922312B5EC1A600110FB6 /* QuoteViewModel.swift in Sources */,
+				8B62940C2B64421C0033B266 /* SwiftUIView.swift in Sources */,
 				8B2922332B5EC1DE00110FB6 /* QuoteService.swift in Sources */,
 				8B29221D2B5EBD4E00110FB6 /* AppDelegate.swift in Sources */,
 				8B29221F2B5EBD4E00110FB6 /* SceneDelegate.swift in Sources */,
